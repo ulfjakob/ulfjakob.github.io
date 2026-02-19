@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-L6V28V3EGT"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-L6V28V3EGT');
   </script>
 
@@ -18,95 +16,88 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <div class="site-title">Ulf Jakob Flø Aarsnes</div>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="code.html">Code</a></li>
+          <li><a href="docs/CV Ulf Jakob Flø Aarsnes.pdf" target="_blank">CV</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro-grid">
+      <img src="images/profile.jpg" alt="Ulf Jakob Flø Aarsnes" class="profile-img">
+      <div>
+        <h1>Ulf Jakob Flø Aarsnes, Ph.D.</h1>
+        <p class="subtitle">Modeling, estimation, and control for drilling and energy systems</p>
+        <p>
+          I develop model-based methods for nonlinear and distributed-parameter systems, with emphasis on
+          deployment-oriented control and estimation. My recent work combines drilling automation with
+          energy-management problems for low-emission systems.
+        </p>
+        <p class="contact-line">
+          <a href="mailto:ulfjakob@gmail.com">ulfjakob@gmail.com</a>
+          <span>·</span>
+          <a href="https://www.linkedin.com/in/ulfjakob/">LinkedIn</a>
+          <span>·</span>
+          <a href="https://scholar.google.no/citations?user=87UnH4AAAAAJ&hl=no">Google Scholar</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="research" class="panel">
+      <h2>Current Research Focus</h2>
+      <div class="focus-grid">
+        <div>
+          <h3>Drilling dynamics and automation</h3>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#projects">Projects</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="code.html">Code</a></li>
-            <li><a href="docs/CV Ulf Jakob Flø Aarsnes.pdf" target="_blank">CV</a></li>
+            <li>Axial and torsional vibration mechanisms in long horizontal wells.</li>
+            <li>Model-based mitigation, friction estimation, and startup trajectory design.</li>
+            <li>Flow and pressure control using reduced two-phase models.</li>
           </ul>
-        </nav>
-      </header>
-  <section id="profile">
-    <h2>
-        Ulf Jakob Flø Aarsnes, Ph.D.
-        <img src="images/profile.jpg" alt="Ulf Jakob Flø Aarsnes" class="profile-img">
-    </h2>
-    <!-- <p><strong>Senior Researcher, Norwegian Research Centre</strong></p> -->
-    
-    <p><a href="mailto:ulfjakob@gmail.com">ulfjakob@gmail.com</a>, <a href="https://www.linkedin.com/in/ulfjakob/">LinkedIn</a>, <a href="https://scholar.google.no/citations?user=87UnH4AAAAAJ&hl=no">Google scholar</a></p>
-  </section>
-
-
-  <section id="projects">
-    <h1>Research</h1>
-
-    <div class="project-list">
-        <div class="project-item">
-          <h3>Drilling vibrations</h3>
-          <img src="images/stickslip.png" alt="stickslip" class="item-image">
-          <p>My views on stick slip vibrations are mostly summarized in <a href="docs/presentations/2019 01 umn.pdf">this</a> presentation that I held at the University of Minnesota in 2019.
-          </p>
-          <p>
-            Stick slip is most likely cause by side forces, and is thereby most severe in long lateral wells. 
-            I did some modelling of this in a collaboration with Roman Shor [J10]. The code is available 
-            <a href="https://github.com/Open-Source-Drilling-Community/Aarsnes-and-Shor-Torsional-Model">here</a>.
-            I strongly believe that this torsional PDE model is the simplest representation that gives a reasonable fidelity to what's seen in the field. We also got some very good
-            results when comparing with field data (see figure above).
-            </p>
-            <p>
-            We later expanded the modelling work to control [C16, J14, J19] and estimation [J17], summarized in <a href="docs/presentations/2018 11 SoCal control workshop.pdf">this</a> SoCal Workshop presentation.
-          </p>
-          <p>
-            Stick slip can also be caused by the regenerative effect in the cutting mechanism, which I investigated with Nathan van de Wouw  [J11, J15].
-            The local linearized analysis shows both an axial and a torsional feedback loop, which can lead to both axial and torsional vibrations.
-            Interestingly, the axial vibrations tend to both dampen the torsional vibrations and yield higher drilling efficiency, which can potentially
-            explain drilling improvements with downhole tools [C25].
-          </p>
         </div>
-
-        <div class="project-item">
-          <h3>Extremum Seeking Weight on Bit control </h3>
-          <img src="images/minesLabExperiment.png" alt="Mines experiements" class="item-image">
-          <p>Drilling rate of penetration has a local maximum with respect to weight on bit (WOB) due to the foundering effect. The optimal WOB is dependent on slowly
-              varying drilling conditions which makes it a good candidate for extremum seeking control (ESC).
-              See ACC presentation <a href="docs/presentations/ESC.pdf">slides</a>, (also [C19] in <a href="publications.html">publications</a>).
-          </p>
-          <p>Interestingly, we ran into to some issues when testing this approach in the lab as we found that the foundering effect from bit balling has a time constant
-              that must be accomodated. At least we ended up with a nice phenomenological model of bit foundering as a result, see [J21].
-          </p>
-      </div>
-
-      <div class="project-item">
-        <h3>Flow and pressure control</h3>
-        <img src="images/simplified2phase.png" alt="stickslip" class="item-image">
-        <p>My <a href="docs/AarsnesThesis.pdf"> thesis</a> was on pressure control of two-phase flow, with the application focus on drilling, but I think it is probably more relevant for production.
-            I think the most interesting part of this work is the simplified two-phase flow models [J6, J7] that are very amenable for controller and estimator design.
-            The quickest intro might be to just look at the <a href="docs/presentations/Disputas.pdf">slides</a> from the thesis defense.
-        </p>
-        <p>
-            I did a webinar on my thesis which is available <a href="https://www.youtube.com/watch?v=BcO2aIt46Rw">here</a>.
-        </p>
-      </div>
-
-        <div class="project-item">
-          <h3>Drilling Colloquium</h3>
-          <img src="images/Colloquium2018 preikestolen.jpg" alt="Participants at Prekestolen" class="item-image">
-          <p>In 2018 I organized 4th International Colloquium on Nonlinear Dynamics and Control of Deep Drilling Systems together with Emmanuel Detournay and Nathan van de Wouw. 
-            It included taking 35 leading drilling researchers on a hike to Prekestolen, which was a lot fun.
-            The proceedings can be found <a href="docs/Stavanger_2018_w_cover.pdf">here</a>.</p>
+        <div>
+          <h3>Energy systems and control</h3>
+          <ul>
+            <li>Online energy management for fuel-cell and battery hybrid systems.</li>
+            <li>Optimization and supervisory control for efficient, robust operation.</li>
+            <li>Transfer of control-theoretic tools from drilling to low-emission systems.</li>
+          </ul>
         </div>
       </div>
-        <h3></h3>
+    </section>
+
+    <section class="panel">
+      <h2>Selected Work Streams</h2>
+      <article class="entry">
+        <h3>Drill-string vibrations</h3>
         <p>
+          Analysis and control-oriented models for stick-slip and coupled axial-torsional effects,
+          including field validation and industrially relevant mitigation settings.
         </p>
-
-  </section>
-
-  
-
-
+      </article>
+      <article class="entry">
+        <h3>Real-time optimization while drilling</h3>
+        <p>
+          Extremum-seeking and transient-aware optimization of weight on bit and drilling efficiency,
+          supported by both theory and laboratory validation.
+        </p>
+      </article>
+      <article class="entry">
+        <h3>Flow, pressure, and state estimation</h3>
+        <p>
+          Simplified multiphase models and estimation frameworks designed for practical controller
+          synthesis and real-time operational use.
+        </p>
+      </article>
+    </section>
+  </main>
 </body>
 </html>

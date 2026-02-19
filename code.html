@@ -7,33 +7,36 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html#projects">Projects</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="code.html">Code</a></li>
-        <li><a href="docs/CV Ulf Jakob Flø Aarsnes.pdf" target="_blank">CV</a></li>
-      </ul>
-    </nav>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <div class="site-title">Ulf Jakob Flø Aarsnes</div>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#research">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="code.html">Code</a></li>
+          <li><a href="docs/CV Ulf Jakob Flø Aarsnes.pdf" target="_blank">CV</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section id="code">
-
-    <h2>Code</h2>
-    <ul>
-      <li>
-        Code used in [J10] to simulate the torsional drill string dynamics with side forces
-        <a href="https://github.com/Open-Source-Drilling-Community/Aarsnes-and-Shor-Torsional-Model">https://github.com/Open-Source-Drilling-Community/Aarsnes-and-Shor-Torsional-Model</a>
-      </li>
-      <li>
-        Code used in [J15] for the simulation of the axial-torsional coupled drill string, with bit rock interaction, but without side forces
-        <a href="https://github.com/ulfjakob/AxialTorsionalDrillString">https://github.com/ulfjakob/AxialTorsionalDrillString</a>.
-      </li>
-    </ul>
-  </section>
-
-
+  <main class="container">
+    <section class="panel">
+      <h1>Code</h1>
+      <p>Selected repositories related to publications and research prototypes.</p>
+      <ul>
+        <li>
+          Torsional drill-string model with side forces (related to [J10]):
+          <a href="https://github.com/Open-Source-Drilling-Community/Aarsnes-and-Shor-Torsional-Model">Aarsnes-and-Shor-Torsional-Model</a>.
+        </li>
+        <li>
+          Axial-torsional drill-string model with bit-rock interaction (related to [J15]):
+          <a href="https://github.com/ulfjakob/AxialTorsionalDrillString">AxialTorsionalDrillString</a>.
+        </li>
+      </ul>
+    </section>
+  </main>
 </body>
 </html>
