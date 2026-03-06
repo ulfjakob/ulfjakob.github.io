@@ -105,12 +105,35 @@ a {
   border: 1px solid var(--border);
 }
 
-ul {
+ul,
+ol {
   padding-left: 22px;
 }
 
-ul li {
+ul li,
+ol li {
   margin-bottom: 8px;
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.highlight-item {
+  border: 1px solid var(--border);
+  background: #fcfcfd;
+  padding: 12px;
+}
+
+.highlight-item h3 {
+  margin-bottom: 6px;
+  font-size: 1.05rem;
+}
+
+.highlight-item p {
+  margin: 0;
 }
 
 .project-list {
@@ -132,6 +155,12 @@ ul li {
   height: auto;
   border: 1px solid var(--border);
   margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+  .highlights-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 720px) {
