@@ -19,36 +19,33 @@
   <header class="site-header">
     <nav class="site-nav">
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="#about" class="active">About</a></li>
         <li><a href="#research">Research</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="code.html">Code</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#talks">Talks</a></li>
+        <li><a href="#funding">Funding</a></li>
+        <li><a href="#code">Code</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#service">Service</a></li>
         <li><a href="docs/CV Ulf Jakob Flø Aarsnes.pdf" target="_blank">CV</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="page-shell">
-    <section id="profile" class="hero card">
+    <section id="about" class="hero card">
       <img src="images/profile.jpg" alt="Ulf Jakob Flø Aarsnes" class="profile-img">
       <div>
         <h1>Ulf Jakob Flø Aarsnes, Ph.D.</h1>
-        <p class="role">Senior Research Scientist, NORCE — Modeling, Estimation, and Control for Energy Systems</p>
+        <p class="role">Senior Researcher, NORCE Norwegian Research Centre</p>
         <p>
-          I am a Senior Research Scientist at NORCE working with model-based methods for drilling, offshore operations,
-          and emerging energy systems. My research combines nonlinear dynamics, distributed-parameter systems, and
-          estimation/control design to support safer, faster, and more autonomous operations.
+          I work on modeling, estimation, and control for high-consequence energy systems, with emphasis on drilling dynamics,
+          two-phase flow, and hydrogen-integrated maritime energy systems. My approach combines physics-based reduced-order
+          modeling with robust control and optimization methods for real-time decision support.
         </p>
-        <p>
-          In addition to drilling dynamics and well control, I work on hydrogen value chains and energy-system
-          integration, and I coordinate the MARINER project alongside related Hydrogen FCs activities.
-        </p>
-        <p>
-          This page complements my institutional profile with selected technical highlights, publications, and open-source material.
-          For a concise institutional overview, see my
-          <a href="https://www.norceresearch.no/en/persons/ulf-jakob-floe-aarsnes/602">NORCE profile</a>.
-        </p>
-        <p>
+        <p>Current work centers on project coordination of MARINER and model-based methods that bridge theory with industrial deployment.</p>
+        <p class="link-line">
+          <a href="https://www.norceresearch.no/en/persons/ulf-jakob-floe-aarsnes/602">NORCE profile</a> ·
           <a href="mailto:ulfjakob@gmail.com">ulfjakob@gmail.com</a> ·
           <a href="https://www.linkedin.com/in/ulfjakob/">LinkedIn</a> ·
           <a href="https://scholar.google.no/citations?user=87UnH4AAAAAJ&hl=no">Google Scholar</a>
@@ -56,71 +53,153 @@
       </div>
     </section>
 
-    <section class="card">
-      <h2>At a Glance</h2>
-      <div class="highlights-grid">
-        <article class="highlight-item">
-          <h3>Primary domain</h3>
-          <p>Dynamics, monitoring, and control of drilling systems and energy systems, with emphasis on vibration mitigation and real-time optimization.</p>
-        </article>
-        <article class="highlight-item">
-          <h3>Methodological focus</h3>
-          <p>Physics-based reduced-order modeling, nonlinear control, observer design, control of PDEs, and data-informed model calibration.</p>
-        </article>
-        <article class="highlight-item">
-          <h3>Applications</h3>
-          <p>Managed pressure drilling, torsional/axial dynamics, hydrogen/energy-system integration, maritime energy systems, and decision support for operational teams.</p>
-        </article>
-      </div>
-    </section>
-
     <section id="research" class="card">
-      <h2>Current Research Focus</h2>
-      <ul class="feature-list">
-        <li>MARINER (Horizon Europe, Clean Hydrogen JU): developing a modular 1 MW hydrogen fuel cell system for maritime vessels, targeting performance, durability, safety, and certification requirements.</li>
-        <li>Drill-string dynamics and mitigation of torsional/axial vibrations in long horizontal wells.</li>
-        <li>Model-based control and estimation for drilling automation, including friction and toolface dynamics.</li>
-        <li>Simplified two-phase flow models for pressure management and real-time operations.</li>
-        <li>Hydrogen FCs and related energy-system modeling for robust operation, integration, and decision support.</li>
-        <li>Optimization and extremum-seeking methods for improved drilling and energy-system efficiency.</li>
+      <h2>Research Interests</h2>
+      <h3>Theory and Methods</h3>
+      <ul class="feature-list dense-list">
+        <li>Machine learning, control and estimation, optimization, and data science.</li>
+        <li>Control and estimation of distributed-parameter systems and nonlinear dynamics.</li>
+        <li>Physics-based reduced-order modeling and data-informed model calibration.</li>
+        <li>Delay-robust control and observer design for coupled PDE-ODE systems.</li>
+      </ul>
+      <h3>Application Domains</h3>
+      <ul class="feature-list dense-list">
+        <li>Drill-string torsional and axial vibration modeling, monitoring, and mitigation.</li>
+        <li>Control-oriented two-phase flow models for pressure and well-control applications.</li>
+        <li>Optimization and extremum-seeking methods for drilling efficiency.</li>
+        <li>Hydrogen and maritime energy-system integration with model-based operation support.</li>
+        <li>Energy systems and decision support for operational and industrial settings.</li>
       </ul>
     </section>
 
-    <section class="card">
-      <h2>Selected Topics and Representative Work</h2>
-      <p>
-        If you know my work through MARINER, which I coordinate, this site is intended to show the same core competence applied across domains:
-        physics-based modeling, estimation, and control for high-consequence energy operations.
-      </p>
-      <div class="project-list">
-        <article class="project-item">
-          <h3>Drilling vibrations</h3>
-          <img src="images/stickslip.png" alt="Stick-slip comparison with field data" class="item-image">
-          <p>
-            I have worked extensively on torsional and axial drill-string dynamics, including side-force-driven stick-slip
-            and regenerative effects. A concise overview is available in this
-            <a href="docs/presentations/2019 01 umn.pdf">University of Minnesota talk</a>.
-          </p>
-        </article>
+    <section id="publications" class="card">
+      <h2>Publications</h2>
 
-        <article class="project-item">
-          <h3>Extremum seeking for drilling optimization</h3>
-          <img src="images/minesLabExperiment.png" alt="Laboratory experiment" class="item-image">
-          <p>
-            Weight-on-bit optimization via extremum seeking was studied both analytically and experimentally,
-            with particular attention to transient foundering effects and practical implementation constraints.
-          </p>
-        </article>
+      <h3>Journal Papers</h3>
+      <ul class="publication-list">
+        <li>[J1] U. J. F. Aarsnes, M. S. Gleditsch, O. M. Aamo, and A. Pavlov, "Modeling and Avoidance of Heave Induced Resonances in Offshore Drilling," SPE Drill. Complet., vol. 29, no.04, pp. 454-464, Dec. 2014.</li>
+        <li>[J2] U. J. F. Aarsnes and O. M. Aamo, "Linear stability analysis of self-excited vibrations in drilling using an infinite dimensional model," J. Sound Vib., vol. 360, pp. 239-259, Jan. 2016.</li>
+        <li>[J3] U. J. F. Aarsnes, F. Di Meglio, R. Graham, and O. M. Aamo, "A Methodology for Classifying Operating Regimes in Underbalanced Drilling Operations," SPE J., vol. 21, no.02, Apr. 2016.</li>
+        <li>[J4] A. Ambrus, U. J. F. Aarsnes, A. Karimi Vajargah, B. Akbari, E. van Oort, and O. M. Aamo, "Real-Time Estimation of Reservoir Influx Rate and Pore Pressure Using a Simplified Transient Two-Phase Flow Model for Managed Pressure Drilling Operations," J. Nat. Gas Sci. Eng., vol. 32, pp. 439-452, 2016.</li>
+        <li>[J5] U. J. F. Aarsnes, B. Acikmese, A. Ambrus, and O. M. Aamo, "Robust Controller Design for Automated Kick Handling in Managed Pressure Drilling," J. of Process Control, vol. 47, pp. 46-57, Nov. 2016.</li>
+        <li>[J6] U. J. F. Aarsnes, A. Ambrus, F. Di Meglio, A. Karimi Vajargah, E. van Oort, and O. M. Aamo, "A Simplified Two-Phase Flow Model Using a Quasi-Equilibrium Momentum Balance," Int. J. of Multiph. flow, vol. 83, pp. 77-85, Mar. 2016.</li>
+        <li>[J7] U. J. F. Aarsnes, T. Flåtten, and O. M. Aamo, "Review of two-phase flow models for control and estimation," Annu. Rev. Control, vol. 42, pp. 50-62, Jul. 2016.</li>
+        <li>[J8] A. Nikoofard, U. J. F. Aarsnes, T. A. Johansen, and G. O. Kaasa, "State and Parameter Estimation of a Drift-Flux Model for Underbalanced Drilling Operations," IEEE Trans. Control Syst. Technol., pp. 1-10, 2017.</li>
+        <li>[J9] T. Pedersen, U. J. F. Aarsnes, and J. M. Godhavn, "Flow and pressure control of underbalanced drilling operations using NMPC," J. of Process Control, 68, 73-85, 2018.</li>
+        <li>[J10] U. J. F. Aarsnes and R. J. Shor, "Torsional vibrations with bit off bottom: Modeling, characterization and field data validation," J. Pet. Sci. Eng., vol. 163, pp. 712-721, Apr. 2018.</li>
+        <li>[J11] U. J. F. Aarsnes and N. van de Wouw, "Dynamics of a distributed drill string system: Characteristic parameters and stability maps," J. Sound Vib., vol. 417, pp. 376-412, Mar. 2018.</li>
+        <li>[J12] J. Auriol, U. J. F. Aarsnes, P. Martin, and F. Di Meglio, "Delay-robust control design for heterodirectional linear coupled hyperbolic PDEs," IEEE Trans. Automat. Contr., vol. 63, no. 10, pp. 3551-3557, Sep. 2018.</li>
+        <li>[J13] U. J. F. Aarsnes and A. Busch, "Transient modeling of one-dimensional solid-liquid flow in conduits," Int. J. of Multiph. flow, 105, pp. 102-111, 2018.</li>
+        <li>[J14] U. J. F. Aarsnes, F. Di Meglio, and R. J. Shor, "Avoiding stick slip vibrations in drilling through startup trajectory design," J. of Process Control, 70, pp. 24-35, 2018.</li>
+        <li>[J15] U. J. F. Aarsnes and N. van de Wouw, "Axial and torsional self-excited vibrations of a distributed drill-string," J. Sound Vib., vol 444, pp. 127-151, Mar. 2019.</li>
+        <li>[J16] U. J. F. Aarsnes and N. van de Wouw, "Effect of shock subs on self-excited vibrations in drilling systems," J. Pet. Sci. Eng., vol. 181, p. 106217, Oct. 2019.</li>
+        <li>[J17] U. J. F. Aarsnes, J. Auriol, F. Di Meglio, and R. J. Shor, "Estimating friction factors while drilling," J. Pet. Sci. Eng., vol. 179, pp. 80-91, Aug. 2019.</li>
+        <li>[J18] F. Di Meglio, P. Lamare, and U. J. F. Aarsnes, "Robust output feedback stabilization of ODE-PDE-ODE interconnection," Automatica, vol. 119, 2020.</li>
+        <li>[J19] J. Auriol, R. J. Shor, U. J. F. Aarsnes, and F. Di Meglio, "Closed-loop toolface control with the bit off-bottom," J. of Process Control, 90, 35-45, 2020.</li>
+        <li>[J20] J. Auriol, U. J. F. Aarsnes, F. Di Meglio, R. Shor, "Robust control design of underactuated 2x2 PDE-ODE-PDE systems," IEEE Contrl Syst. Letters, vol. 5, no. 2, pp. 469-474, 2020.</li>
+        <li>[J21] U. J. F. Aarsnes, A. Ambrus, F. Di Meglio, L. Gerbaud, "A phenomenological transient model of bit foundering," Journal of Petroleum Science and Engineering 199, 108299, 2021.</li>
+        <li>[J22] T. Strecker, U. J. F. Aarsnes, "Boundary Control and Estimation for Underbalanced Drilling With Uncertain Reservoir Parameters," IEEE Transactions on Control Systems Technology, vol. 31, no. 1, pp. 281-294, 2022.</li>
+        <li>[J23] P. M. Nüsse, A. Ambrus, U. J. F. Aarsnes, O. M. Aamo, "Evaluation of distributed damping subs with active control for stick-slip reduction in drilling," Geoenergy Science and Engineering, vol. 231, Part A, 212255, 2023.</li>
+        <li>[J24] J. Shi, U. J. F. Aarsnes, D. Nærheim, S. Moura, "Online energy management system for a fuel cell/battery hybrid system with multiple fuel cell stacks," Submitted, 2023.</li>
+      </ul>
 
-        <article class="project-item">
-          <h3>Flow and pressure control</h3>
-          <img src="images/simplified2phase.png" alt="Simplified two-phase model" class="item-image">
-          <p>
-            My <a href="docs/AarsnesThesis.pdf">doctoral thesis</a> and subsequent work developed simplified two-phase models
-            designed for controller and estimator synthesis, with applications in drilling and production-oriented settings.
-          </p>
-        </article>
-      </div>
+      <h3>Conference Proceedings</h3>
+      <ul class="publication-list">
+        <li>[C1] I. S. Landet, H. Mahdianfar, U. J. F. Aarsnes, A. Pavlov, and O. M. Aamo, "Modeling for MPD Operations With Experimental Validation," IADC/SPE Drilling Conference and Exhibition, 2012.</li>
+        <li>[C2] U. J. F. Aarsnes, O. M. Aamo, and A. Pavlov, "Quantifying Error Introduced by Finite Order Discretization of a Hydraulic Well Model," Australian Control Conference, 2012.</li>
+        <li>[C3] U. J. F. Aarsnes, O. M. Aamo, E. Hauge, and A. Pavlov, "Limits of Controller Performance in the Heave Disturbance Attenuation Problem," European Control Conference, 2013.</li>
+        <li>[C4] U. J. F. Aarsnes, F. Di Meglio, O. M. Aamo, and G.-O. Kaasa, "Fit-for-Purpose Modeling for Automation of Underbalanced Drilling Operations," SPE/IADC MPD &amp; UBO Conference, 2014.</li>
+        <li>[C5] F. Di Meglio, D. Bresch-Pietri, and U. J. F. Aarsnes, "An Adaptive Observer for Hyperbolic Systems with Application to Under Balanced Drilling," IFAC World Congress, 2014.</li>
+        <li>[C6] U. J. F. Aarsnes, H. Mahdianfar, O. M. Aamo and A. Pavlov, "Rejection of Heave-Induced Pressure Oscillations in Managed Pressure Drilling," Colloquium on Nonlinear Dynamics and Control of Deep Drilling Systems, 2014 (Invited).</li>
+        <li>[C7] U. J. F. Aarsnes, F. Di Meglio, S. Evje, and O. M. Aamo, "Control-Oriented Drift-Flux Modeling of Single and Two-Phase Flow for Drilling," ASME Dynamic Systems and Control Conference, 2014.</li>
+        <li>[C8] F. Di Meglio and U. J. F. Aarsnes, "A distributed parameter systems view of control problems in drilling," IFAC Workshop on Automatic Control in Offshore Oil and Gas Production, 2015.</li>
+        <li>[C9] A. Nikoofard, U. J. F. Aarsnes, T. A. Johansen and G.-O. Kaasa, "Estimation of States and Parameters of Drift-Flux Model with Unscented Kalman Filter," IFAC Workshop on Automatic Control in Offshore Oil and Gas Production, 2015.</li>
+        <li>[C10] U. J. F. Aarsnes, A. Ambrus, A. Karimi Vajargah, O. M. Aamo, and E. Van Oort, "A Simplified Gas-Liquid Flow Model for Kick Mitigation and Control During Drilling Operations," ASME Dynamic Systems and Control Conference, 2015.</li>
+        <li>[C11] A. Ambrus, U. J. F. Aarsnes, A. Karimi Vajargah and E. van Oort, "A Simplified Transient Multi-Phase Model for Automated Well Control Applications," International Petroleum Technology Conference, 2015.</li>
+        <li>[C12] U. J. F. Aarsnes, E. Hauge and J.-M. Godhavn, "Mathematical Modeling of Gas in Riser," SPE Deepwater Drilling &amp; Completions Conference, 2016.</li>
+        <li>[C13] U. J. F. Aarsnes and N. van de Wouw, "Axial and torsional dynamics of a distributed drill string system," European Nonlinear Dynamics Conference, 2017.</li>
+        <li>[C14] U. J. F. Aarsnes and R. J. Shor, "Stick-slip and torsional friction factors in inclined wellbores," MATEC Web of Conferences, 2018.</li>
+        <li>[C15] P.-O. Lamare, J. Auriol, F. di Meglio, and U. J. F. Aarsnes, "Robust output regulation of 2x2 hyperbolic systems: Control law and Input-to-State Stability," American Control Conference, 2018.</li>
+        <li>[C16] U. J. F. Aarsnes, F. Meglio, and R. J. Shor, "Benchmarking of Industrial Stick-Slip Mitigation Controllers," IFAC Workshop on Automatic Control in Offshore Oil and Gas Production, 2018.</li>
+        <li>[C17] R. J. Shor, U. J. F. Aarsnes and F. Di Meglio, "Effects of latency, motor inertia and filtering on stick-slip mitigation control," Colloquium on Nonlinear Dynamics and Control of Deep Drilling Systems, 2018 (Invited).</li>
+        <li>[C18] F. Di Meglio, U. J. F. Aarsnes, and R. J. Shor, "Advances in control of Hyperbolic Partial Differential Equations: opportunities for drilling," Colloquium on Nonlinear Dynamics and Control of Deep Drilling Systems, 2018 (Invited).</li>
+        <li>[C19] U. J. F. Aarsnes, O. M. Aamo and M. Krstic, "Extremum seeking for real-time optimal drilling control," American Control Conference, 2019.</li>
+        <li>[C20] U. J. F. Aarsnes, R. Vazquez, F. Di Meglio and M. Krstic, "Delay robust control design of under-actuated PDE-ODE-PDE systems," American Control Conference, 2019.</li>
+        <li>[C21] P. Pastusek, G. Payette, R. Shor, E. Cayeux, U. J. F. Aarsnes, et al., "Creating Open Source Models, Test Cases, and Data for Oilfield Drilling Challenges," SPE/IADC International Drilling Conference and Exhibition, 2019.</li>
+        <li>[C22] J. Auriol, U. J. F. Aarsnes and R. Shor, "Self-Tuning Torsional Drilling Model for Real-Time Applications," American Control Conference, 2020.</li>
+        <li>[C23] J. Auriol, U. J. F. Aarsnes, F. Di Meglio and R. Shor, "Robust control design of underactuated 2x2 PDE-ODE-PDE systems," IEEE Conference on Decision and Control, 2020.</li>
+        <li>[C24] A. Ambrus, U. J. F. Aarsnes, E. Cayeux, R. Mihai, "Modeling and Analysis of Non-Rotating Damping Subs for Removing Torsional Vibrations in Drilling," OMAE, 2022.</li>
+        <li>[C25] A. G. Aribowo, U. J. F. Aarsnes, E. Detournay, N. van de Wouw, N. Reimers, "Performance Analysis of a Downhole Regulator on Rate-Of-Penetration and Drilling Efficiency: An Autonomous Load Management at Bit," SPE/IADC International Drilling Conference and Exhibition, 2023.</li>
+        <li>[C26] J. Shi, S. Jiang, U. J. F. Aarsnes, D. Nærheim, S. Moura, "Multiple Time Scale Energy Management for a Fuel Cell Ship Propulsion System," European Control Conference, 2024.</li>
+        <li>[C27] A. Ambrus, J. Mugisha, A. Shchipanov, U. J. F. Aarsnes, A. M. Øverland, "Automated Rate Control to Prevent Induced Fracturing and Fracture Opening Monitored with Step Rate Tests," SPE Europe Energy Conference and Exhibition, 2024.</li>
+        <li>[C28] A. Aribowo, U. J. F. Aarsnes, K. Chen, E. M. Detournay, N. van de Wouw, "Model-based drilling performance analysis of a downhole regulator," 6th International Colloquium on Nonlinear Dynamics and Control of Deep Drilling Systems, 2024.</li>
+      </ul>
+    </section>
+
+    <section id="talks" class="card">
+      <h2>Talks</h2>
+      <ul class="timeline-list">
+        <li><strong>2024</strong> AVM Workshop, NTNU Business School, Trondheim, Norway.</li>
+        <li><strong>2019</strong> Department of Mechanical Engineering, Technische Universiteit Eindhoven, The Netherlands.</li>
+        <li><strong>2019</strong> Geo-seminar, University of Minnesota, Minneapolis, MN, USA.</li>
+        <li><strong>2018</strong> SoCal Control Workshop, UCLA, CA, USA.</li>
+        <li><strong>2016</strong> Energy, Controls and Applications Lab, UC Berkeley, CA, USA.</li>
+        <li><strong>2016</strong> Department of Chemical and Petroleum Engineering, University of Calgary, Canada.</li>
+        <li><strong>2015</strong> SPE Managed Pressure Drilling and Well Control Workshop, Rio, Brazil.</li>
+        <li><strong>2014</strong> SINTEF Materials and Chemistry, Trondheim, Norway.</li>
+        <li><strong>2014</strong> UT Austin Drilling Automation Group, Austin, TX, USA.</li>
+        <li><strong>2014</strong> Blade Energy Partners, Frisco, TX, USA.</li>
+        <li><strong>2013</strong> Servomøtet, Trondheim, Norway.</li>
+      </ul>
+    </section>
+
+    <section id="funding" class="card">
+      <h2>Funding and Project Leadership</h2>
+      <ul class="timeline-list">
+        <li><strong>MARINER (2026-2030), Principal Investigator and Project Coordinator</strong> Horizon Europe Clean Hydrogen Partnership, grant 7,000,000 EUR.</li>
+        <li><strong>RECIDS MSCA Fellowship (2018-2020), Project Manager</strong> Norwegian Research Council and Marie Sklodowska-Curie Actions, grant 3,105,000 NOK.</li>
+        <li><strong>DigiWells SFI (2020-2021), Work Package Leader</strong> Norwegian Research Council and industry partners, WP budget 3,500,000 NOK per year.</li>
+        <li><strong>Decision Support for Professional Real-Estate Price Estimation (2022-2024), Project Manager</strong> Innovation Project for the Industrial Sector (IP-N), grant 9,700,000 NOK (total budget 17,100,000 NOK).</li>
+        <li><strong>HyEff (2022-2025), Work Package Leader</strong> Collaborative and Knowledge-building Project (KSP), grant 12,000,000 NOK (WP budget 2,090,000 NOK).</li>
+        <li><strong>Ocean Charger (2023-2025), Task Leader</strong> Green Platform Initiative with Research Council, Innovation Norway, and Siva, grant 77,000,000 NOK (NORCE budget 6,980,000 NOK).</li>
+      </ul>
+    </section>
+
+    <section id="code" class="card">
+      <h2>Code</h2>
+      <ul class="resource-list">
+        <li>Torsional drill-string model with side forces: <a href="https://github.com/Open-Source-Drilling-Community/Aarsnes-and-Shor-Torsional-Model">Aarsnes-and-Shor-Torsional-Model</a>.</li>
+        <li>Axial-torsional drill-string model with bit-rock interaction: <a href="https://github.com/ulfjakob/AxialTorsionalDrillString">AxialTorsionalDrillString</a>.</li>
+      </ul>
+    </section>
+
+    <section id="experience" class="card">
+      <h2>Experience</h2>
+      <ul class="timeline-list">
+        <li><strong>NORCE Norwegian Research Centre AS, Senior Researcher (2018-present)</strong> Oslo, Norway.</li>
+        <li><strong>Solgt.no AS, Head of Research and Development (2021-2024)</strong> Oslo, Norway.</li>
+        <li><strong>MINES ParisTech, MSCA Fellow (2019-2020)</strong> Paris, France.</li>
+        <li><strong>University of California San Diego, MSCA Fellow (2018-2019)</strong> La Jolla, CA, USA.</li>
+        <li><strong>International Research Institute of Stavanger, Postdoctoral Researcher (2016-2017)</strong> Oslo, Norway.</li>
+        <li><strong>MINES ParisTech, Visiting Researcher (2013 and 2016)</strong> Paris, France.</li>
+        <li><strong>Blade Energy Partners, Secondment (2015)</strong> Frisco, TX, USA.</li>
+        <li><strong>The University of Texas at Austin, Visiting Researcher (2014)</strong> Austin, TX, USA.</li>
+        <li><strong>Statoil, Research Internship (2013)</strong> Porsgrunn, Norway.</li>
+      </ul>
+    </section>
+
+    <section id="service" class="card">
+      <h2>Education and Academic Service</h2>
+      <ul class="timeline-list">
+        <li><strong>Ph.D. in Engineering Cybernetics, NTNU (2012-2015)</strong> Dissertation: Modeling of Two-Phase Flow for Estimation and Control of Drilling Operations.</li>
+        <li><strong>M.S.E. in Engineering Cybernetics, NTNU (2007-2012)</strong> Thesis: Reduced Order Observer Design for Managed Pressure Drilling.</li>
+        <li><strong>Visiting Scholar, UC Berkeley (2010-2011)</strong> Department of Electrical Engineering and Computer Science.</li>
+        <li><strong>Teaching and supervision</strong> Co-supervision of 2 PhD students (2021-2025), co-supervision of 8 M.S.E. students (2013-2025), examiner in Control Engineering and Engineering Cybernetics.</li>
+        <li><strong>Reviewer, funding agencies</strong> Norwegian Research Council, Innovation Project for the Industrial Sector (IP-N), 2022-2025.</li>
+        <li><strong>Reviewer, journals</strong> IEEE Transactions on Control Systems Technology, Annual Reviews in Control, Brazilian Journal of Chemical Engineering, Journal of Sound and Vibration, Journal of Petroleum Science and Engineering, Journal of Process Control, International Journal of Robust and Nonlinear Control, Nonlinear Dynamics, Automatica, Meccanica, IEEE Transactions on Automatic Control.</li>
+        <li><strong>Reviewer, conferences</strong> IFAC Oilfield, ECC, ASME DSCC, ACC, CDC, OMAE.</li>
+        <li><strong>Patent</strong> United States Provisional Patent Application No. 17/055,825: system and method for estimating distributed static and kinematic friction, torque, and RPM along a drillstring in a wellbore.</li>
+      </ul>
     </section>
   </main>
 </body>
