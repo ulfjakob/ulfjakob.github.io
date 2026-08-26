@@ -20,6 +20,7 @@
     <nav class="site-nav">
       <ul>
         <li><a href="#about" class="active">About</a></li>
+        <li><a href="#news">News</a></li>
         <li><a href="#research">Research</a></li>
         <li><a href="#publications">Publications</a></li>
         <li><a href="#talks">Talks</a></li>
@@ -51,6 +52,28 @@
           <a href="https://scholar.google.no/citations?user=87UnH4AAAAAJ&hl=no">Google Scholar</a>
         </p>
       </div>
+    </section>
+
+    <section id="news" class="card">
+      <h2>News</h2>
+      <ul class="news-list">
+        <li data-date="2026-08-26">
+          <span class="news-date">Aug 2026</span>
+          New preprint: "Modeling and Control of Maritime Hydrogen Energy Systems" available on
+          <a href="https://ssrn.com/abstract=7353389" target="_blank">SSRN</a>.
+        </li>
+      </ul>
+      <script>
+        (function() {
+          var cutoff = new Date();
+          cutoff.setMonth(cutoff.getMonth() - 12);
+          document.querySelectorAll('.news-list li[data-date]').forEach(function(li) {
+            if (new Date(li.getAttribute('data-date')) < cutoff) {
+              li.style.display = 'none';
+            }
+          });
+        })();
+      </script>
     </section>
 
     <section id="research" class="card">
