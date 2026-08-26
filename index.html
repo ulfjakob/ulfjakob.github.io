@@ -20,6 +20,7 @@
     <nav class="site-nav">
       <ul>
         <li><a href="#about" class="active">About</a></li>
+        <li><a href="#news">News</a></li>
         <li><a href="#research">Research</a></li>
         <li><a href="#publications">Publications</a></li>
         <li><a href="#talks">Talks</a></li>
@@ -51,6 +52,32 @@
           <a href="https://scholar.google.no/citations?user=87UnH4AAAAAJ&hl=no">Google Scholar</a>
         </p>
       </div>
+    </section>
+
+    <section id="news" class="card">
+      <h2>News</h2>
+      <ul class="news-list">
+        <li data-date="2026-08-26">
+          <span class="news-date">Aug 2026</span>
+          New preprint: A. Haïk and U. J. F. Aarsnes, "Stochastic Control of Active PEMFC Module Count in Hybrid Vessels," available on
+          <a href="https://ssrn.com/abstract=7353389" target="_blank">SSRN</a>.
+        </li>
+        <li data-date="2026-04-26">
+          <span class="news-date">Apr 2026</span>
+          Kick-off of the EU-funded <a href="https://lnkd.in/p/efQjS7JE" target="_blank">MARINER-HE</a> project in Bergen during One Ocean Week — developing a 1 MW hydrogen fuel cell system for large vessels.
+        </li>
+      </ul>
+      <script>
+        (function() {
+          var cutoff = new Date();
+          cutoff.setMonth(cutoff.getMonth() - 12);
+          document.querySelectorAll('.news-list li[data-date]').forEach(function(li) {
+            if (new Date(li.getAttribute('data-date')) < cutoff) {
+              li.style.display = 'none';
+            }
+          });
+        })();
+      </script>
     </section>
 
     <section id="research" class="card">

@@ -292,6 +292,26 @@ p {
   color: var(--muted);
 }
 
+.news-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+}
+
+.news-list li {
+  padding: 4px 0 4px 14px;
+  border-left: 3px solid color-mix(in srgb, var(--accent) 48%, var(--border));
+}
+
+.news-date {
+  display: inline-block;
+  font-weight: 600;
+  color: var(--accent);
+  min-width: 5.5em;
+}
+
 .dense-list {
   margin-bottom: 2px;
 }
